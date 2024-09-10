@@ -15,6 +15,7 @@ const ContactForm = () => {
     workingDays: "",
     billingCircle: "",
     additionalInformation: "",
+    addressLine2: "",
   });
 
   const handleChange = (e) => {
@@ -143,6 +144,7 @@ const ContactForm = () => {
             onChange={handleChange}
             className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
+          
           <input
             type="text"
             name="companyAddress"
@@ -151,6 +153,7 @@ const ContactForm = () => {
             onChange={handleChange}
             className="w-full border border-gray-300 p-2 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
           />
+    
           <input
             type="text"
             name="companyAddress"
@@ -235,14 +238,14 @@ const ContactForm = () => {
           <button
             type="reset"
             onClick={handleReset}
-            className="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+            className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-200"
           >
             Reset
           </button>
           <button
             type="submit"
             onClick={handleSubmit}
-            className="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+            className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-200"
           >
             Submit
           </button>
