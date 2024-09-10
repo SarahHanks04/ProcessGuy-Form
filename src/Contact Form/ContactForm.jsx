@@ -109,25 +109,27 @@ const ContactForm = () => {
           </label>
           <div className="flex justify-evenly">
             <div>
-            <input
-              type="radio"
-              name="preferredContactMethod"
-              value="email"
-              checked={formData.preferredContactMethod === "email"}
-              onChange={handleChange}
-            />
-            <label htmlFor="email">Email</label>
+              <input
+                type="radio"
+                name="preferredContactMethod"
+                value="email"
+                checked={formData.preferredContactMethod === "email"}
+                onChange={handleChange}
+              />
+              <label htmlFor="email">Email</label>
             </div>
+
             <div>
-            <input
-              type="radio"
-              name="preferredContactMethod"
-              value="phone"
-              checked={formData.preferredContactMethod === "phone"}
-              onChange={handleChange}
-            />
-            <label htmlFor="phone">Phone</label>
+              <input
+                type="radio"
+                name="preferredContactMethod"
+                value="phone"
+                checked={formData.preferredContactMethod === "phone"}
+                onChange={handleChange}
+              />
+              <label htmlFor="phone">Phone</label>
             </div>
+
           </div>
         </div>
         <div>
