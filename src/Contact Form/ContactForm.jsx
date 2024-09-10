@@ -35,9 +35,9 @@ const ContactForm = () => {
   };
 
   return (
-    <main className="max-w-3xl mx-auto bg-white rounded-lg shadow-md">
+    <main className="max-w-3xl mx-auto bg-gray-100 rounded-lg shadow-md">
       <div className="header max-w-3xl bg-blue-500 text-white rounded-t-md text-center">
-        <h1 className="text-2xl mb-5 pt-3 font-semibold">Client Details</h1>
+        <h1 className="text-3xl mb-6 pt-3 font-semibold">Client Details</h1>
         <p className="text-sm">Enter the details of all incoming client</p>
       </div>
 
@@ -107,7 +107,8 @@ const ContactForm = () => {
           >
             Preferred Contact Method <span className="text-red-600">*</span>
           </label>
-          <div>
+          <div className="flex justify-evenly">
+            <div>
             <input
               type="radio"
               name="preferredContactMethod"
@@ -116,6 +117,8 @@ const ContactForm = () => {
               onChange={handleChange}
             />
             <label htmlFor="email">Email</label>
+            </div>
+            <div>
             <input
               type="radio"
               name="preferredContactMethod"
@@ -124,6 +127,7 @@ const ContactForm = () => {
               onChange={handleChange}
             />
             <label htmlFor="phone">Phone</label>
+            </div>
           </div>
         </div>
         <div>
