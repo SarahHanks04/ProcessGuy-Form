@@ -118,28 +118,30 @@ const ContactForm = () => {
           >
             Preferred Contact Method <span className="text-red-600">*</span>
           </label>
-          <div className="flex">
-            <div className="mr-[8rem]">
+          <div className="flex items-center space-x-40">
+            <label htmlFor="email" className="flex items-center">
               <input
                 type="radio"
                 name="preferredContactMethod"
                 value="email"
                 checked={formData.preferredContactMethod === "email"}
                 onChange={handleChange}
+                className="w-4 h-4 mr-2"
               />
-              <label htmlFor="email">Email</label>
-            </div>
+              Email
+            </label>
 
-            <div>
+            <label htmlFor="phone" className="flex items-center">
               <input
                 type="radio"
                 name="preferredContactMethod"
                 value="phone"
                 checked={formData.preferredContactMethod === "phone"}
                 onChange={handleChange}
+                className="w-4 h-4 mr-2"
               />
-              <label htmlFor="phone">Phone</label>
-            </div>
+              Phone
+            </label>
           </div>
         </div>
         <div>
