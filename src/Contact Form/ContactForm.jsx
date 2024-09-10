@@ -15,7 +15,6 @@ const ContactForm = () => {
     workingDays: "",
     billingCircle: "",
     additionalInformation: "",
-    addressLine2: "",
   });
 
   const handleChange = (e) => {
@@ -29,14 +28,25 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted successfully:", formData);
-  };
-
-  const handleReset = (e) => {
-    setFormData("");
+    setFormData({
+      clientName: "",
+      company: "",
+      title: "",
+      department: "",
+      preferredContactMethod: "",
+      email: "",
+      phone: "",
+      companyAddress: "",
+      companyLogo: "",
+      workingHours: "",
+      workingDays: "",
+      billingCircle: "",
+      additionalInformation: "",
+    });
   };
 
   return (
-    <main className="max-w-3xl mx-auto bg-gray-100 rounded-lg shadow-md">
+    <main className="max-w-3xl mx-auto bg-gray-100 rounded-lg shadow-md mb-4">
       <div className="header max-w-3xl bg-blue-500 text-white rounded-t-md text-center">
         <h1 className="text-3xl mb-6 pt-3 font-semibold">Client Details</h1>
         <p className="text-sm">Enter the details of all incoming client</p>
@@ -108,8 +118,8 @@ const ContactForm = () => {
           >
             Preferred Contact Method <span className="text-red-600">*</span>
           </label>
-          <div className="flex justify-evenly">
-            <div>
+          <div className="flex">
+            <div className="mr-[8rem]">
               <input
                 type="radio"
                 name="preferredContactMethod"
@@ -130,7 +140,6 @@ const ContactForm = () => {
               />
               <label htmlFor="phone">Phone</label>
             </div>
-
           </div>
         </div>
         <div>
@@ -144,7 +153,7 @@ const ContactForm = () => {
             onChange={handleChange}
             className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-400"
           />
-          
+
           <input
             type="text"
             name="companyAddress"
@@ -153,7 +162,7 @@ const ContactForm = () => {
             onChange={handleChange}
             className="w-full border border-gray-300 p-2 mt-4 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500"
           />
-    
+
           <input
             type="text"
             name="companyAddress"
@@ -233,19 +242,11 @@ const ContactForm = () => {
             rows="10"
           ></textarea>
         </div>
-
-        <div className="flex justify-evenly">
-          <button
-            type="reset"
-            onClick={handleReset}
-            className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-200"
-          >
-            Reset
-          </button>
+        <div className="text-center">
           <button
             type="submit"
             onClick={handleSubmit}
-            className="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-200"
+            className="bg-blue-500 text-white py-2 px-8 rounded-md hover:bg-blue-600 transition duration-200"
           >
             Submit
           </button>
