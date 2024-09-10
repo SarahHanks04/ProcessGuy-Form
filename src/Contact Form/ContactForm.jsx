@@ -149,7 +149,7 @@ const ContactForm = () => {
             value={formData.companyAddress}
             placeholder="Address line 2"
             onChange={handleChange}
-            className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full border border-gray-300 p-2 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
           />
           <input
             type="text"
@@ -157,7 +157,7 @@ const ContactForm = () => {
             value={formData.companyAddress}
             placeholder="City"
             onChange={handleChange}
-            className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full border border-gray-300 p-2 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
           <input
             type="text"
@@ -165,7 +165,7 @@ const ContactForm = () => {
             value={formData.companyAddress}
             placeholder="Street/Region/Province"
             onChange={handleChange}
-            className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full border border-gray-300 p-2 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
           <input
             type="text"
@@ -173,7 +173,7 @@ const ContactForm = () => {
             value={formData.companyAddress}
             placeholder="Posta/Zip Code"
             onChange={handleChange}
-            className="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full border border-gray-300 p-2 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
         <div>
