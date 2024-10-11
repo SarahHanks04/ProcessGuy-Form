@@ -55,7 +55,7 @@ const ContactForm = () => {
       <form className="space-y-4 p-8">
         <div>
           <label htmlFor="clientName" className="block text-gray-700">
-            Client Name <span className="text-red-600">*</span>
+            Client Name <span className="text-red-600"> * </span>
           </label>
           <input
             type="text"
@@ -108,7 +108,7 @@ const ContactForm = () => {
             <option value="fiance">Finance</option>
             <option value="banking">Banking</option>
             <option value="procurement">Procurement</option>
-            <option value="security">Security</option>
+            <option value="security">Security*</option>
           </select>
         </div>
         <div>
