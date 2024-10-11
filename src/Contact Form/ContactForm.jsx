@@ -95,7 +95,7 @@ const ContactForm = () => {
             Department <span className="text-red-600">*</span>
           </label>
           <select
-            name="department"
+            name=""
             id="department"
             value={formData.department}
             onChange={handleChange}
@@ -108,7 +108,7 @@ const ContactForm = () => {
             <option value="fiance">Finance</option>
             <option value="banking">Banking</option>
             <option value="procurement">Procurement</option>
-            <option value="security">Security Ministry</option>
+            <option value="security">Security Market</option>
           </select>
         </div>
         <div>
