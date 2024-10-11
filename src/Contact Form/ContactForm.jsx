@@ -108,7 +108,7 @@ const ContactForm = () => {
             <option value="fiance">Finance</option>
             <option value="banking">Banking</option>
             <option value="procurement">Procurement</option>
-            <option value="security">Security Department</option>
+            <option value="security">Security Market</option>
           </select>
         </div>
         <div>
