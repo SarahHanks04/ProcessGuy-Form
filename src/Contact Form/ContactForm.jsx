@@ -95,7 +95,7 @@ const ContactForm = () => {
             Department <span className="text-red-600">*</span>
           </label>
           <select
-            name="department"
+            name=""
             id="department"
             value={formData.department}
             onChange={handleChange}
